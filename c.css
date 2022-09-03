@@ -1,0 +1,76 @@
+/*
+  player radius - 64
+  obs left - 403
+  obs right - 531
+  obs top - 200
+  obs bot - 328
+*/
+
+:root{
+  --bg:#DDDDDD;
+}
+
+body{
+  overflow:hidden;
+  background:var(--bg);
+}
+
+#Player1{
+  position:absolute;
+  top:200px;
+  left:200px;
+  width:128px;
+  z-index:4;
+}
+
+#Player2{
+  position:absolute;
+  top:200px;
+  left:606px;
+  width:128px;
+  z-index:3;
+}
+
+#Obstacle{
+  position:absolute;
+  top:200px;
+  left:403px;
+  width:128px;
+  z-index:5;
+}
+
+#Player1Bullet{
+  position:absolute;
+  top:50px;
+  left:50px;
+  width:32px;
+  visibility:hidden;
+  z-index:2;
+}
+
+#Player2Bullet{
+  position:absolute;
+  top:50px;
+  left:50px;
+  width:32px;
+  visibility:hidden;
+  z-index:1;
+}
+
+#Player1ReloadBar{
+  position:absolute;
+  top:232px;
+  left:427px;
+  width:32px;
+  height:64px;
+  z-index:7;
+}
+
+#Player2ReloadBar{
+  position:absolute;
+  top:232px;
+  left:475px;
+  width:32px;
+  height:64px;
+  z-index:6;
+}
